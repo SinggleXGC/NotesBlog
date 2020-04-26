@@ -1,0 +1,99 @@
+body {
+    background-color: #f4f5f5 !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* display */
+.xgc-inline-block {
+    display: inline-block;
+}
+.xgc-inline-flex {
+    display: inline-flex;
+}
+
+/* 弹性布局 */
+.xgc-flex {
+    display: flex;
+}
+.xgc-vertical-center {
+    align-items: center;
+}
+
+/* margin */
+.xgc-margin-lr-none {
+    margin-left: 0;
+    margin-right: 0;
+}
+.xgc-margin-lr-small {
+    margin: 40px;
+}
+.xgc-margin-l-small {
+    margin-left: 40px;
+}
+.xgc-margin-r-small {
+    margin-right: 40px;
+}
+.xgc-margin-r-mini {
+    margin-right: 5px;
+}
+
+
+/* padding */
+.xgc-padding-lr-none {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* font */
+.xgc-font-secondary {
+    color: rgba( 0, 0, 0, 0.3);
+    font-size: 14px;
+}
+.xgc-font-footer {
+    color: rgba( 255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* background */
+.xgc-bg-light-grey {
+    background-color: #F4F5F5;
+}
+.xgc-bg-dark-grey {
+    background-color: #2e3033;
+}
+
+/* 布局div */
+.xgc-content-container {
+    padding: 10px 30px 30px 30px;
+    background-color: #fff;
+    width: 60% !important;
+    margin: 0 auto;
+}
+.xgc-fragment {
+    border-top: 1px solid #f4f5f6;
+    border-bottom: 1px;
+    margin-bottom: 30px;
+}
+.xgc-block-vertical-center {
+    margin: 0 auto;
+}
+
+/* 图片设置 */
+.xgc-avatar-mini {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.xgc-media-img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 10px;
+    position: relative;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, 0);
+}
