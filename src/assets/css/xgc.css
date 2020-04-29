@@ -5,6 +5,9 @@ body {
 }
 
 /* display */
+.xgc-block {
+    display: block;
+}
 .xgc-inline-block {
     display: inline-block;
 }
@@ -18,6 +21,12 @@ body {
 }
 .xgc-vertical-center {
     align-items: center;
+}
+
+.xgc-container-none {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
 }
 
 /* margin */
@@ -40,6 +49,9 @@ body {
 
 
 /* padding */
+.xgc-padding-tiny {
+    padding: 20px;
+}
 .xgc-padding-lr-none {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -55,6 +67,9 @@ body {
     font-size: 14px;
     font-weight: 200;
 }
+.xgc-font-bold {
+    font-weight: 600;
+}
 
 /* background */
 .xgc-bg-light-grey {
@@ -65,6 +80,33 @@ body {
 }
 
 /* 布局div */
+.xgc-aside {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.xgc-content-container-3 {
+    padding: 0;
+    margin: 0;
+    /*height: 100px;*/
+    width: 30%;
+}
+.xgc-content-container-7 {
+    padding: 0;
+    margin: 0;
+    /*height: 100px;*/
+    /*background-color: yellow;*/
+    width: 70%;
+}
+.xgc-content-container-full {
+    background-color: #fff;
+}
+.xgc-content-container-large {
+    padding: 10px 30px 30px 30px;
+    background-color: #fff;
+    width: 80% !important;
+    margin: 0 auto;
+}
 .xgc-content-container {
     padding: 10px 30px 30px 30px;
     background-color: #fff;
@@ -74,13 +116,19 @@ body {
 .xgc-fragment {
     border-top: 1px solid #f4f5f6;
     border-bottom: 1px;
-    margin-bottom: 30px;
+    padding: 20px;
 }
 .xgc-block-vertical-center {
     margin: 0 auto;
 }
 
 /* 图片设置 */
+.xgc-avatar-tiny {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+}
 .xgc-avatar-mini {
     width: 20px;
     height: 20px;
