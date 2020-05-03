@@ -1,147 +1,147 @@
-body {
-    background-color: #f4f5f5 !important;
-    margin: 0;
-    padding: 0;
-}
+/*body {*/
+/*    background-color: #f4f5f5 !important;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
 
-/* display */
-.xgc-block {
-    display: block;
-}
-.xgc-inline-block {
-    display: inline-block;
-}
-.xgc-inline-flex {
-    display: inline-flex;
-}
+/*!* display *!*/
+/*.xgc-block {*/
+/*    display: block;*/
+/*}*/
+/*.xgc-inline-block {*/
+/*    display: inline-block;*/
+/*}*/
+/*.xgc-inline-flex {*/
+/*    display: inline-flex;*/
+/*}*/
 
-/* 弹性布局 */
-.xgc-flex {
-    display: flex;
-}
-.xgc-vertical-center {
-    align-items: center;
-}
+/*!* 弹性布局 *!*/
+/*.xgc-flex {*/
+/*    display: flex;*/
+/*}*/
+/*.xgc-vertical-center {*/
+/*    align-items: center;*/
+/*}*/
 
-.xgc-container-none {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0;
-}
+/*.xgc-container-none {*/
+/*    margin: 0 !important;*/
+/*    padding: 0 !important;*/
+/*    border: 0;*/
+/*}*/
 
-/* margin */
-.xgc-margin-lr-none {
-    margin-left: 0;
-    margin-right: 0;
-}
-.xgc-margin-lr-small {
-    margin: 40px;
-}
-.xgc-margin-l-small {
-    margin-left: 40px;
-}
-.xgc-margin-r-small {
-    margin-right: 40px;
-}
-.xgc-margin-r-mini {
-    margin-right: 5px;
-}
+/*!* margin *!*/
+/*.xgc-margin-lr-none {*/
+/*    margin-left: 0;*/
+/*    margin-right: 0;*/
+/*}*/
+/*.xgc-margin-lr-small {*/
+/*    margin: 40px;*/
+/*}*/
+/*.xgc-margin-l-small {*/
+/*    margin-left: 40px;*/
+/*}*/
+/*.xgc-margin-r-small {*/
+/*    margin-right: 40px;*/
+/*}*/
+/*.xgc-margin-r-mini {*/
+/*    margin-right: 5px;*/
+/*}*/
 
 
-/* padding */
-.xgc-padding-tiny {
-    padding: 20px;
-}
-.xgc-padding-lr-none {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+/*!* padding *!*/
+/*.xgc-padding-tiny {*/
+/*    padding: 20px;*/
+/*}*/
+/*.xgc-padding-lr-none {*/
+/*    padding-left: 0 !important;*/
+/*    padding-right: 0 !important;*/
+/*}*/
 
-/* font */
-.xgc-font-secondary {
-    color: rgba( 0, 0, 0, 0.3);
-    font-size: 14px;
-}
-.xgc-font-footer {
-    color: rgba( 255, 255, 255, 0.7);
-    font-size: 14px;
-    font-weight: 200;
-}
-.xgc-font-bold {
-    font-weight: 600;
-}
+/*!* font *!*/
+/*.xgc-font-secondary {*/
+/*    color: rgba( 0, 0, 0, 0.3);*/
+/*    font-size: 14px;*/
+/*}*/
+/*.xgc-font-footer {*/
+/*    color: rgba( 255, 255, 255, 0.7);*/
+/*    font-size: 14px;*/
+/*    font-weight: 200;*/
+/*}*/
+/*.xgc-font-bold {*/
+/*    font-weight: 600;*/
+/*}*/
 
-/* background */
-.xgc-bg-light-grey {
-    background-color: #F4F5F5;
-}
-.xgc-bg-dark-grey {
-    background-color: #2e3033;
-}
+/*!* background *!*/
+/*.xgc-bg-light-grey {*/
+/*    background-color: #F4F5F5;*/
+/*}*/
+/*.xgc-bg-dark-grey {*/
+/*    background-color: #2e3033;*/
+/*}*/
 
-/* 布局div */
-.xgc-aside {
-    width: 60%;
-    margin: 20px auto;
-    background-color: #fff;
-}
-.xgc-content-container-3 {
-    padding: 0;
-    margin: 0;
-    /*height: 100px;*/
-    width: 30%;
-}
-.xgc-content-container-7 {
-    padding: 0;
-    margin: 0;
-    /*height: 100px;*/
-    /*background-color: yellow;*/
-    width: 70%;
-}
-.xgc-content-container-full {
-    background-color: #fff;
-}
-.xgc-content-container-large {
-    padding: 10px 30px 30px 30px;
-    background-color: #fff;
-    width: 80% !important;
-    margin: 0 auto;
-}
-.xgc-content-container {
-    padding: 10px 30px 30px 30px;
-    background-color: #fff;
-    width: 60% !important;
-    margin: 0 auto;
-}
-.xgc-fragment {
-    border-top: 1px solid #f4f5f6;
-    border-bottom: 1px;
-    padding: 20px;
-}
-.xgc-block-vertical-center {
-    margin: 0 auto;
-}
+/*!* 布局div *!*/
+/*.xgc-aside {*/
+/*    width: 60%;*/
+/*    margin: 20px auto;*/
+/*    background-color: #fff;*/
+/*}*/
+/*.xgc-content-container-3 {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    !*height: 100px;*!*/
+/*    width: 30%;*/
+/*}*/
+/*.xgc-content-container-7 {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    !*height: 100px;*!*/
+/*    !*background-color: yellow;*!*/
+/*    width: 70%;*/
+/*}*/
+/*.xgc-content-container-full {*/
+/*    background-color: #fff;*/
+/*}*/
+/*.xgc-content-container-large {*/
+/*    padding: 10px 30px 30px 30px;*/
+/*    background-color: #fff;*/
+/*    width: 80% !important;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.xgc-content-container {*/
+/*    padding: 10px 30px 30px 30px;*/
+/*    background-color: #fff;*/
+/*    width: 60% !important;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.xgc-fragment {*/
+/*    border-top: 1px solid #f4f5f6;*/
+/*    border-bottom: 1px;*/
+/*    padding: 20px;*/
+/*}*/
+/*.xgc-block-vertical-center {*/
+/*    margin: 0 auto;*/
+/*}*/
 
-/* 图片设置 */
-.xgc-avatar-tiny {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.xgc-avatar-mini {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.xgc-media-img {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 10px;
-    position: relative;
-    left: 100%;
-    top: 50%;
-    transform: translate(-100%, 0);
-}
+/*!* 图片设置 *!*/
+/*.xgc-avatar-tiny {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border-radius: 50%;*/
+/*    display: inline-block;*/
+/*}*/
+/*.xgc-avatar-mini {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    border-radius: 50%;*/
+/*    display: inline-block;*/
+/*}*/
+/*.xgc-media-img {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    display: block;*/
+/*    margin: 10px;*/
+/*    position: relative;*/
+/*    left: 100%;*/
+/*    top: 50%;*/
+/*    transform: translate(-100%, 0);*/
+/*}*/

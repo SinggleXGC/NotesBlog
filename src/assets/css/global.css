@@ -1,0 +1,37 @@
+/* global setting */
+html, body, #app{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f5f5;
+}
+
+/* element-ui modify setting */
+.el-container {
+    height: 100%;
+}
+.el-header {
+    padding: 0 !important;
+}
+.el-main {
+    padding: 0 auto 20px !important;
+}
+
+/* self layout */
+.xgc-main-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+}
+
+/* display */
+.xgc-display-flex {
+    display: flex;
+}
+
+/* flex setting */
+.xgc-margin-left-auto {
+    margin-left: auto !important;
+}

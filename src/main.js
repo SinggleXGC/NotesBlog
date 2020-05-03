@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 //导入css样式
-import '@/assets/css/xgc.css'
+import '@/assets/css/global.css'
 import '@/assets/font/iconfont.css'
 
 //导入VueRouter配置
