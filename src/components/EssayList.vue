@@ -188,13 +188,6 @@
 </script>
 
 <style scoped>
-    .essay-info * {
-        margin: 0 1px;
-    }
-    .essay-info *:nth-child(even) {
-        margin-right: 5px;
-    }
-
     .author-info * {
         margin: 8px;
     }
