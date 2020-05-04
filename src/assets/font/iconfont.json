@@ -6,11 +6,25 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "7772181",
+      "name": "icon_calendar_fill",
+      "font_class": "icon_calendar_fill",
+      "unicode": "eba5",
+      "unicode_decimal": 60325
+    },
+    {
       "icon_id": "11372640",
       "name": "编辑",
       "font_class": "bianji",
       "unicode": "e8ac",
       "unicode_decimal": 59564
+    },
+    {
+      "icon_id": "11372686",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e8b4",
+      "unicode_decimal": 59572
     },
     {
       "icon_id": "11372706",
@@ -32,6 +46,13 @@
       "font_class": "yanjing",
       "unicode": "e8c7",
       "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "11372791",
+      "name": "创作",
+      "font_class": "chuangzuo",
+      "unicode": "e8ca",
+      "unicode_decimal": 59594
     }
   ]
 }

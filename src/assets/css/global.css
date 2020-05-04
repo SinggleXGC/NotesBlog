@@ -21,9 +21,56 @@ html, body, #app{
 /* self layout */
 .xgc-main-container {
     width: 80%;
-    height: 100%;
     margin: auto;
+}
+.xgc-content-container {
+    width: 70%;
+    margin-right: 20px;
     background-color: #fff;
+}
+.xgc-aside {
+    width: 30%;
+    background-color: #fff;
+}
+.xgc-fragment {
+    /*padding: 20px;*/
+    margin: 20px;
+}
+.xgc-media {
+    display: flex;
+}
+.xgc-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* img setting */
+.xgc-img-mini {
+    width: 25px;
+    height: 25px;
+}
+.xgc-img-normal {
+    width: 80px;
+    height: 80px;
+}
+
+/* font setting */
+.xgc-font-head {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.xgc-font-secondary {
+    font-size: 0.8em;
+    color: rgba( 0, 0, 0, 0.3);
+}
+.xgc-font-center {
+    text-align: center;
+}
+
+/* border setting */
+.xgc-border-round {
+    border-radius: 50%;
 }
 
 /* display */
@@ -32,6 +79,21 @@ html, body, #app{
 }
 
 /* flex setting */
+.xgc-flex-direction-col {
+    flex-direction: column;
+}
+.xgc-justify-content-space-around {
+    justify-content: space-around;
+}
+.xgc-align-items-center {
+    align-items: center;
+}
+.xgc-align-self-flex-start {
+    align-self: flex-start;
+}
+.xgc-align-self-auto {
+    align-self: auto;
+}
 .xgc-margin-left-auto {
     margin-left: auto !important;
 }

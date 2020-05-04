@@ -16,9 +16,7 @@
                 </el-menu>
             </el-header>
             <el-main>
-                <div class="xgc-main-container">
-                    <router-view></router-view>
-                </div>
+                <router-view></router-view>
             </el-main>
         </el-container>
     </div>
