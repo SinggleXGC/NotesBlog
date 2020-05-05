@@ -25,11 +25,15 @@ html, body, #app{
 }
 .xgc-content-container {
     width: 70%;
-    margin-right: 20px;
+    background-color: #fff;
+}
+.xgc-content-container-8 {
+    width: 80%;
     background-color: #fff;
 }
 .xgc-aside {
     width: 30%;
+    margin-left: 20px;
     background-color: #fff;
 }
 .xgc-fragment {
@@ -68,6 +72,11 @@ html, body, #app{
     text-align: center;
 }
 
+/* background-color setting */
+.xgc-bg-color-white {
+    background-color: #fff;
+}
+
 /* border setting */
 .xgc-border-round {
     border-radius: 50%;
@@ -76,6 +85,9 @@ html, body, #app{
 /* display */
 .xgc-display-flex {
     display: flex;
+}
+.xgc-display-inline-block {
+    display: inline-block;
 }
 
 /* flex setting */
@@ -94,8 +106,16 @@ html, body, #app{
 .xgc-align-self-auto {
     align-self: auto;
 }
+.xgc-margin-auto {
+    margin: auto;
+}
 .xgc-margin-left-auto {
     margin-left: auto !important;
+}
+
+/* float setting */
+.xgc-float-right {
+    float: right;
 }
 
 /* personal setting */

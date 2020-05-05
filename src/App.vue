@@ -9,7 +9,7 @@
                     <el-menu-item class="xgc-margin-left-auto">
                         <el-input placeholder="请输入搜索内容" suffix-icon="iconfont icon-sousuo"></el-input>
                     </el-menu-item>
-                    <el-menu-item>
+                    <el-menu-item index="/publish">
                         <span><i class="iconfont icon-bianji"></i>写文章</span>
                     </el-menu-item>
                     <el-menu-item>登录</el-menu-item>

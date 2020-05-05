@@ -12,6 +12,9 @@ import '@/plugins/element-ui'
 //导入element-ui的样式文件
 import 'element-ui/lib/theme-chalk/index.css'
 
+// import 'editor.md/css/editormd.min.css'
+// import 'editor.md/editormd.min'
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import EssayList from '@/components/EssayList';
 import Essay from "@/components/Essay";
 import CategoryList from "@/components/CategoryList";
+import Publish from "@/components/Publish";
 
 Vue.use(Router)
 
@@ -12,7 +13,8 @@ const router = new Router({
         {path: '/', redirect:'/index'},
         {path: '/index', component: EssayList},
         {path:'/category', component: CategoryList},
-        {path: '/essay/10', component: Essay}
+        {path: '/essay/10', component: Essay},
+        {path: '/publish', component: Publish}
     ]
 })
 
