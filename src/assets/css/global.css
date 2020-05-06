@@ -18,6 +18,12 @@ html, body, #app{
     padding: 0 auto 20px !important;
 }
 
+
+/* markdown modify setting */
+.markdown-editor {
+    margin: 0 !important;
+}
+
 /* self layout */
 .xgc-main-container {
     width: 80%;
@@ -25,6 +31,10 @@ html, body, #app{
 }
 .xgc-content-container {
     width: 70%;
+    background-color: #fff;
+}
+.xgc-content-container-full {
+    width: 100%;
     background-color: #fff;
 }
 .xgc-content-container-8 {
@@ -82,6 +92,11 @@ html, body, #app{
     border-radius: 50%;
 }
 
+/* padding setting */
+.xgc-padding-tiny {
+    padding: 20px;
+}
+
 /* display */
 .xgc-display-flex {
     display: flex;
@@ -111,6 +126,11 @@ html, body, #app{
 }
 .xgc-margin-left-auto {
     margin-left: auto !important;
+}
+
+/* overflow setting */
+.xgc-overflow-hidden {
+    overflow: hidden;
 }
 
 /* float setting */

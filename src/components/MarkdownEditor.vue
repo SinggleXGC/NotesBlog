@@ -26,7 +26,7 @@
                 type: Object,
                 default() {
                     return {
-                        width: '88%',
+                        width: '100%',
                         height: 530,
                         path: '/editor.md/lib/',
                         codeFold: true,
