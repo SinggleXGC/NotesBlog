@@ -93,6 +93,9 @@ html, body, #app{
 }
 
 /* padding setting */
+.xgc-padding-medium {
+    padding: 40px;
+}
 .xgc-padding-tiny {
     padding: 20px;
 }
