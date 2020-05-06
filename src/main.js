@@ -8,12 +8,9 @@ import '@/assets/font/iconfont.css'
 import router from "@/router";
 
 //导入element-ui的配置文件
-import '@/plugins/element-ui'
+import '@/element-ui'
 //导入element-ui的样式文件
 import 'element-ui/lib/theme-chalk/index.css'
-
-// import 'editor.md/css/editormd.min.css'
-// import 'editor.md/editormd.min'
 
 Vue.config.productionTip = false
 

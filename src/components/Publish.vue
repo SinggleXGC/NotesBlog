@@ -5,10 +5,8 @@
                 <el-form-item label="文章标题">
                     <el-input></el-input>
                 </el-form-item>
-                <el-form-item label="content">
-<!--                    <div id="editor">-->
-<!--                        <textare style="display: none;">### input essay contenta</textare>-->
-<!--                    </div>-->
+                <el-form-item>
+                    <markdown-editor></markdown-editor>
                 </el-form-item>
                 <el-form-item label="展示图片">
                     <el-input></el-input>
@@ -28,8 +26,11 @@
 
 
 <script>
+    import MarkdownEditor from "@/components/MarkdownEditor";
+
     export default {
-        name: "Publish"
+        name: "Publish",
+        components: {MarkdownEditor}
     }
 </script>
 
