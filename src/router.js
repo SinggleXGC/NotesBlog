@@ -18,4 +18,15 @@ const router = new Router({
     ]
 })
 
+router.beforeEach((to, from, next) => {
+    if (to.path === '/publish') {
+        if (window.sessionStorage.getItem("user")) {
+            next();
+        }else {
+            return;
+        }
+    }
+    next();
+})
+
 export default router;

@@ -3,7 +3,7 @@ import {
     Container, Header, Main,
     Menu, MenuItem,
     Input, Form, FormItem,Select,Button, Upload,
-    Divider,
+    Divider, Dialog, Message,
     Tag
 } from "element-ui";
 
@@ -12,5 +12,7 @@ import {
 Vue.use(Container).use(Header).use(Main)
     .use(Menu).use(MenuItem)
     .use(Input).use(Form).use(FormItem).use(Select).use(Button).use(Upload)
-    .use(Divider)
+    .use(Divider).use(Dialog)
     .use(Tag)
+
+Vue.prototype.$message = Message;
