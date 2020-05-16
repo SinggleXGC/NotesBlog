@@ -6,6 +6,8 @@ create table Essay(
     `createTime` datetime not null ,
     `updateTime` datetime not null ,
     `isPublish` bit not null ,
-    `tid` int references Tag (`tid`) ,
-    `uid` int not null references User (`uid`)
+    `tid` int not null ,
+    `uid` int not null,
+    foreign key (`tid`) references Tag(`tid`),
+    foreign key(`uid`) references User(`uid`)
 )

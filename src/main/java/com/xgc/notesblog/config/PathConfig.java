@@ -10,5 +10,6 @@ public class PathConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/avatar/**").addResourceLocations("classpath:/static/avatar/");
+        registry.addResourceHandler("/img/**").addResourceLocations("classpath:/static/img/");
     }
 }

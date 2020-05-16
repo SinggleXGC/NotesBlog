@@ -5,6 +5,7 @@ import com.xgc.notesblog.Entity.User;
 import com.xgc.notesblog.dto.ResponseDTO;
 import com.xgc.notesblog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,7 +25,6 @@ public class LoginController {
             return new ResponseDTO(403, "请输入账号或密码", null);
         }
         User user = userService.selectUserByUserName(username);
-        System.out.println(password.equals(user.getPassword()));
         if (user == null) {
             responseDTO = new ResponseDTO(403, "用户名不存在", null);
         }else if (!password.equals(user.getPassword())) {
