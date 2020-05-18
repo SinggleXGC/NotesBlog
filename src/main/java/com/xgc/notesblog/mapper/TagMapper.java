@@ -18,4 +18,7 @@ public interface TagMapper {
     @Insert("insert into tag set tagName = #{tagName}")
     int insertTag(String tagName);
 
+    @Select("select tid from tag where tagName = #{tagName}")
+    Integer selectTidByTagName(String tagName);
+
 }

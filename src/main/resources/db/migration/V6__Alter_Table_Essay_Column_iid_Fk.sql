@@ -1,1 +1,0 @@
-alter table essay add constraint fk_iid foreign key(iid) references Img(iid)

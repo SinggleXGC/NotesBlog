@@ -16,4 +16,12 @@ public class TagService {
     public List<Tag> getTagList() {
         return tagMapper.getTagList();
     }
+
+    public int insertTag(String tagName) {
+        return tagMapper.insertTag(tagName);
+    }
+
+    public Integer selectTidByTagName(String tagName) {
+        return tagMapper.selectTidByTagName(tagName);
+    }
 }

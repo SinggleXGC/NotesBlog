@@ -1,5 +1,5 @@
 create table Essay(
-    `bid` int PRIMARY KEY auto_increment ,
+    `eid` int PRIMARY KEY auto_increment ,
     `title` varchar(255) not null ,
     `content` text not null ,
     `showPicture` varchar(255),

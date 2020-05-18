@@ -1,9 +1,10 @@
 package com.xgc.notesblog.controller;
 
-import com.xgc.notesblog.Entity.Img;
-import com.xgc.notesblog.service.ImgService;
+import com.xgc.notesblog.Entity.GlobalProperties;
+import com.xgc.notesblog.dto.ImgDTO;
+import com.xgc.notesblog.dto.ResponseDTO;
+import com.xgc.notesblog.dto.STATUS;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,14 +17,12 @@ import java.io.IOException;
 public class ImgController {
 
     @Autowired
-    ImgService imgService;
+    GlobalProperties globalProperties;
 
     @PostMapping("/uploadimg")
-
-    public String uploadImg(@RequestParam MultipartFile file) {
+    public ResponseDTO uploadImg(@RequestParam MultipartFile file) {
         String imgName = file.getOriginalFilename();
-        String classpath = ClassUtils.getDefaultClassLoader().getResource("").getPath();
-        String filepath = classpath + "static" + File.separator + "img";
+        String filepath = "D:/Store/Resource/img";
         File f = new File(filepath);
         if (!f.exists()) {
             f.mkdirs();
@@ -35,12 +34,8 @@ public class ImgController {
             e.printStackTrace();
         }
 
-        Img img = new Img();
-        img.setImgName(imgName);
-        img.setImgUrl("/static/img/" + imgName);
-        imgService.insertImg(img);
-
-        return "nothing";
+        ImgDTO imgDTO = new ImgDTO(imgName, globalProperties.getBaseurl() + "/img/" + imgName);
+        return new ResponseDTO(STATUS.OK.getStatus(), "上传图片成功", imgDTO);
     }
 }
 
