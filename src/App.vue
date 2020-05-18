@@ -78,8 +78,7 @@
                         const loginForm = new FormData();
                         loginForm.append("username", this.loginForm.username);
                         loginForm.append("password", this.loginForm.password);
-                        const {data: res} = await this.$http.post('login', loginForm);
-                        console.log(res)
+                        const {data: res} = await this.$http.post('/login', loginForm);
                         if (res.status != 200){
                             this.$message.error(res.msg);
                         } else {
@@ -111,7 +110,7 @@
                 else return false;
             },
             pushToPublish() {
-                if (!this.checkIfLogin()) return
+                if (!this.checkIfLogin()) return this.$message.error("请先登录！")
             }
         },
         created() {

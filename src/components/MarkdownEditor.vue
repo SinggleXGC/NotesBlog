@@ -1,7 +1,7 @@
 <template>
     <div class="markdown-editor">
         <div id="editor">
-            <textarea style="display: none;">### input essay content</textarea>
+            <textarea style="display: none;" id="content">### input essay content</textarea>
         </div>
     </div>
 </template>
@@ -42,10 +42,10 @@
                         // imageUpload: true,
                         // imageFormats: ['jpg', 'jpeg', 'gif', 'png', 'bmp', 'webp'],
                         // imageUploadURL: 'examples/php/upload.php',
-                        onload: () => {
+                        // onload: () => {
                             // eslint-disable-next-line
-                            console.log('onload', this);
-                        }
+                            // console.log('onload', this);
+                        // }
                     };
                 }
             }
@@ -72,6 +72,10 @@
                         this.instance = editorMD('editor', this.editorConfig);
                     }
                 });
+            },
+            getContent() {
+                const content = document.getElementById('content').value;
+                return content;
             }
         }
     }
