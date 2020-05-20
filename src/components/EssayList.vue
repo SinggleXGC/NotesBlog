@@ -1,6 +1,6 @@
 <template>
     <div class="xgc-main-container xgc-display-flex">
-        <div class="xgc-content-container" v-infinite-scroll="load" :infinite-scroll-disabled="disabled" infinite-scroll-delay="500">
+        <div class="xgc-content-container" v-infinite-scroll="load" :infinite-scroll-disabled="disabled" infinite-scroll-delay="300">
             <div class="xgc-fragment" v-for="essay in essayList" :key="essay.eid">
                 <div class="xgc-media">
                     <div class="xgc-display-flex xgc-flex-direction-col xgc-justify-content-space-around">

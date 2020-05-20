@@ -48,7 +48,8 @@
         methods: {
             async getTagList() {
                 const {data: res} = await this.$http.get('/taglist');
-                this.essayTagList = res;
+                if (res.status !== 200) return this.$message.error("获取标签列表失败");
+                this.essayTagList = res.data;
             },
             async uploadImgSuccess(response) {
                 const {data: res} = await response;
