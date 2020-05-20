@@ -21,4 +21,7 @@ public interface TagMapper {
     @Select("select tid from tag where tagName = #{tagName}")
     Integer selectTidByTagName(String tagName);
 
+    @Select("select * from tag where tid = #{tid}")
+    Tag selectTagByTid(Integer tid);
+
 }

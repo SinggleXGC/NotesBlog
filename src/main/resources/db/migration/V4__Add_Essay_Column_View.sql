@@ -1,0 +1,1 @@
+alter table essay add view int after content

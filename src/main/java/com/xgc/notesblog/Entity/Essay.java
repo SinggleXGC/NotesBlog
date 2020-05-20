@@ -14,6 +14,7 @@ public class Essay {
     private Integer eid;
     private String title;
     private String content;
+    private Integer view;
     private String showPicture;
     private Date createTime;
     private Date updateTime;

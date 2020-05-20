@@ -9,4 +9,6 @@ public class ImgDTO {
 
     private String name;
     private String url;
+
+
 }
