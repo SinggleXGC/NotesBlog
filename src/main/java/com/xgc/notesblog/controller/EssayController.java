@@ -45,13 +45,25 @@ public class EssayController {
 
     @GetMapping("/essays")
     public ResponseDTO getPublishEssayList(@RequestParam int pageNum, @RequestParam int pageSize) {
-        List<EssayDTO> essays = essayService.selectPublishEssayListByQuery(pageNum, pageSize);
+        List<EssayDTO> essays = essayService.selectPublishEssayListByQuery(pageNum, pageSize, -1);
         return new ResponseDTO(STATUS.OK.getStatus(), "获取文章列表成功", essays);
     }
 
     @GetMapping("/essaycount")
     public ResponseDTO getEssayCount(){
         int count = essayService.getEssayCount();
+        return new ResponseDTO(STATUS.OK.getStatus(), "获取文章总数成功", count);
+    }
+
+    @GetMapping("/essaysbytid")
+    public ResponseDTO getPublishEssayListByTid(@RequestParam int pageNum, @RequestParam int pageSize, @RequestParam int tid) {
+        List<EssayDTO> essays = essayService.selectPublishEssayListByQuery(pageNum, pageSize, tid);
+        return new ResponseDTO(STATUS.OK.getStatus(), "获取文章列表成功", essays);
+    }
+
+    @GetMapping("/essaybytidcount")
+    public ResponseDTO getEssayListByTidCount(@RequestParam int tid) {
+        int count = essayService.getEssayByTidCount(tid);
         return new ResponseDTO(STATUS.OK.getStatus(), "获取文章总数成功", count);
     }
 

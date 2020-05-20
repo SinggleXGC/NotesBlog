@@ -49,9 +49,14 @@ public class EssayService {
 //        return essayDTOS;
 //    }
 
-    public List<EssayDTO> selectPublishEssayListByQuery(int pageNum, int pageSize) {
+    public List<EssayDTO> selectPublishEssayListByQuery(int pageNum, int pageSize, int tid) {
         int offset = (pageNum - 1) * pageSize;
-        List<Essay> essays = essayMapper.selectPublishEssayListByQuery(pageSize, offset);
+        List<Essay> essays;
+        if (tid == -1) {
+            essays = essayMapper.selectPublishEssayListByPageSizeAndOffset(pageSize, offset);
+        }else {
+            essays = essayMapper.selectPublishEssayListByPageSizeAndOffsetAndTid(pageSize, offset, tid);
+        }
         List<EssayDTO> essayDTOS = new ArrayList<>();
         for(Essay essay: essays) {
             EssayDTO essayDTO = new EssayDTO(essay);
@@ -69,5 +74,9 @@ public class EssayService {
 
     public int getEssayCount() {
         return essayMapper.getEssayCount();
+    }
+
+    public int getEssayByTidCount(int tid) {
+        return essayMapper.getEssayByTidCount(tid);
     }
 }

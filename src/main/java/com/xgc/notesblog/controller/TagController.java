@@ -19,8 +19,9 @@ public class TagController {
     TagService tagService;
 
     @GetMapping("/taglist")
-    public List<Tag> getTagList() {
-        return tagService.getTagList();
+    public ResponseDTO getTagList() {
+        List<Tag> tags = tagService.getTagList();
+        return new ResponseDTO(STATUS.OK.getStatus(), "获取列表成功", tags);
     }
 
     @PostMapping("/addtag")

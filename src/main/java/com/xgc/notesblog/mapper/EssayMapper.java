@@ -22,8 +22,15 @@ public interface EssayMapper {
 //    List<Essay> selectPublishEssayList();
 
     @Select("select * from essay where isPublish = true limit #{pageSize} offset #{offset}")
-    List<Essay> selectPublishEssayListByQuery(int pageSize, int offset);
+    List<Essay> selectPublishEssayListByPageSizeAndOffset(int pageSize, int offset);
+
+    @Select("select * from essay where isPublish = true and tid = #{tid} limit #{pageSize} offset #{offset}")
+    List<Essay> selectPublishEssayListByPageSizeAndOffsetAndTid(int pageSize, int offset, int tid);
 
     @Select("select count(eid) from essay where isPublish = true")
     int getEssayCount();
+
+    @Select("select count(eid) from essay where isPublish = true and tid = #{tid}")
+    int getEssayByTidCount(int tid);
+
 }
