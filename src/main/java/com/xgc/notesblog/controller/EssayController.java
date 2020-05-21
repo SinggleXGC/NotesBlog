@@ -67,4 +67,10 @@ public class EssayController {
         return new ResponseDTO(STATUS.OK.getStatus(), "获取文章总数成功", count);
     }
 
+    @GetMapping("/essay")
+    public ResponseDTO getEssayByEid(@RequestParam int eid) {
+        Essay essay = essayService.getEssayByEid(eid);
+        return new ResponseDTO(STATUS.OK.getStatus(), "获取文章成功", essay);
+    }
+
 }

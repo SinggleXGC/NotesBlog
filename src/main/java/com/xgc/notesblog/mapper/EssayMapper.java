@@ -33,4 +33,7 @@ public interface EssayMapper {
     @Select("select count(eid) from essay where isPublish = true and tid = #{tid}")
     int getEssayByTidCount(int tid);
 
+    @Select("select * from essay where eid = #{eid}")
+    Essay getEssayByEid(int eid);
+
 }

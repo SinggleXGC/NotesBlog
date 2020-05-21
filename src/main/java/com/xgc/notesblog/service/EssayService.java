@@ -4,9 +4,12 @@ import com.xgc.notesblog.Entity.Essay;
 import com.xgc.notesblog.Entity.Tag;
 import com.xgc.notesblog.Entity.User;
 import com.xgc.notesblog.dto.EssayDTO;
+import com.xgc.notesblog.dto.ResponseDTO;
+import com.xgc.notesblog.dto.STATUS;
 import com.xgc.notesblog.mapper.EssayMapper;
 import com.xgc.notesblog.mapper.TagMapper;
 import com.xgc.notesblog.mapper.UserMapper;
+import com.xgc.notesblog.utils.MarkdownUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -78,5 +81,12 @@ public class EssayService {
 
     public int getEssayByTidCount(int tid) {
         return essayMapper.getEssayByTidCount(tid);
+    }
+
+    public Essay getEssayByEid(int eid) {
+        Essay essay = essayMapper.getEssayByEid(eid);
+        String content = essay.getContent();
+        essay.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return essay;
     }
 }
