@@ -2,32 +2,9 @@
     <div class="xgc-main-container">
         <div class="xgc-content-container-full">
             <div class="xgc-padding-medium">
-                <h1>面试官：你对Redis缓存了解吗？面对这11道面试题你是否有很多问号？</h1>
+                <h1 style="text-align: center">{{essay.title}}</h1>
 
-                <p>
-                    这个问题，互联网公司必问，要是一个人连缓存都不太清楚，那确实比较尴尬。
-                    只要问到缓存，上来第一个问题，肯定是先问问你项目哪里用了缓存？为啥要用？不用行不行？如果用了以后可能会有什么不良的后果？
-                    这就是看看你对缓存这个东西背后有没有思考，如果你就是傻乎乎的瞎用，没法给面试官一个合理的解答，那面试官对你印象肯定不太好，
-                    觉得你平时思考太少，就知道干活儿。
-                </p>
-                <p>
-                    这个问题，互联网公司必问，要是一个人连缓存都不太清楚，那确实比较尴尬。
-                    只要问到缓存，上来第一个问题，肯定是先问问你项目哪里用了缓存？为啥要用？不用行不行？如果用了以后可能会有什么不良的后果？
-                    这就是看看你对缓存这个东西背后有没有思考，如果你就是傻乎乎的瞎用，没法给面试官一个合理的解答，那面试官对你印象肯定不太好，
-                    觉得你平时思考太少，就知道干活儿。
-                </p>
-                <p>
-                    这个问题，互联网公司必问，要是一个人连缓存都不太清楚，那确实比较尴尬。
-                    只要问到缓存，上来第一个问题，肯定是先问问你项目哪里用了缓存？为啥要用？不用行不行？如果用了以后可能会有什么不良的后果？
-                    这就是看看你对缓存这个东西背后有没有思考，如果你就是傻乎乎的瞎用，没法给面试官一个合理的解答，那面试官对你印象肯定不太好，
-                    觉得你平时思考太少，就知道干活儿。
-                </p>
-                <p>
-                    这个问题，互联网公司必问，要是一个人连缓存都不太清楚，那确实比较尴尬。
-                    只要问到缓存，上来第一个问题，肯定是先问问你项目哪里用了缓存？为啥要用？不用行不行？如果用了以后可能会有什么不良的后果？
-                    这就是看看你对缓存这个东西背后有没有思考，如果你就是傻乎乎的瞎用，没法给面试官一个合理的解答，那面试官对你印象肯定不太好，
-                    觉得你平时思考太少，就知道干活儿。
-                </p>
+                <div id="content" v-html="essay.content"></div>
             </div>
         </div>
     </div>
@@ -35,7 +12,34 @@
 
 <script>
     export default {
-        name: "Essay"
+        name: "Essay",
+        data() {
+            return {
+                essay: {}
+            }
+        },
+        props: ['eid'],
+        methods: {
+            async getEssayByEid(eid) {
+                const {data: res} = await this.$http.get("/essay", {
+                    params: {
+                        eid: eid
+                    }
+                });
+                if(res.status !== 200) return this.$message.error("获取文章信息失败");
+                this.essay = res.data;
+            }
+        },
+        watch: {
+            eid: function (newValue) {
+                this.getEssayByEid(newValue);
+                window.sessionStorage.setItem("eid", newValue);
+            }
+        },
+        created() {
+            const eid = window.sessionStorage.getItem("eid");
+            this.getEssayByEid(eid);
+        }
     }
 </script>
 

@@ -13,7 +13,7 @@ const router = new Router({
         {path: '/', redirect:'/index'},
         {path: '/index', component: EssayList},
         {path:'/category', component: CategoryList},
-        {path: '/essay/10', component: Essay},
+        {path: '/essay/:eid', component: Essay, props: true},
         {path: '/publish', component: Publish}
     ]
 })

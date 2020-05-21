@@ -148,3 +148,8 @@ html, body, #app{
 .essay-info *:nth-child(even) {
     margin-right: 5px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

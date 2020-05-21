@@ -4,9 +4,9 @@
             <div class="xgc-fragment" v-for="essay in essayList" :key="essay.eid">
                 <div class="xgc-media">
                     <div class="xgc-display-flex xgc-flex-direction-col xgc-justify-content-space-around">
-                        <div class="xgc-title">
+                        <a class="xgc-title" :href="'/#/essay/' + essay.eid" @click="saveEid(essay.eid)">
                             <span>{{ essay.title }}</span>
-                        </div>
+                        </a>
                         <div class="xgc-font-secondary">
                             <div class="essay-info xgc-display-flex xgc-align-items-center">
                                 <img :src="baseUrl + essay.avatarUrl" alt="头像" class="xgc-img-mini xgc-border-round">
@@ -103,6 +103,9 @@
                 });
                 this.essayList = this.essayList.concat(res.data);
                 if (this.queryParam.pageNum >= this.total) this.disabled = true;
+            },
+            saveEid(eid) {
+                window.sessionStorage.setItem("eid", eid);
             }
         },
         created() {
